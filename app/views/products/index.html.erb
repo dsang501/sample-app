@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>サンプルアプリケーション</title>
+</head>
+<body>
+  <h1>商品一覧</h1>
+  <table border="1">
+    <thead>
+      <tr>
+        <th>商品名</th>
+        <th>金額</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @products.each do |products| %>
+        <tr>
+          <td><%= product.title %></td>
+          <td><%= product.price %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</body>
+</html>
